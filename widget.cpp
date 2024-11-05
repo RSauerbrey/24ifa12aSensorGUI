@@ -18,3 +18,8 @@ void Widget::beenden()
 {
     this->close();
 }
+
+void Widget::action()
+{
+    ui->edtEingabe->setText("Hallo IFA12A");
+}
