@@ -13,7 +13,15 @@ QString Model::getState()
 }
 
 //Gibt den dG Zeiger zurück, wenn im Array noch Platz war, ansonsten nullptr
-void Model::addSensor(DataGate *dG)
+DataGate* Model::addSensor(DataGate *dG)
 {
-
+    for( int i = 0; i < 1; i++)
+    {
+        if( sensoren[i] == nullptr )
+        {
+            sensoren[i] = dG;
+            return dG;
+        }
+    }
+    return nullptr;
 }
