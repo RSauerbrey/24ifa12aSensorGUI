@@ -7,11 +7,17 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
     connect(ui->btnBeenden, SIGNAL( clicked() ), this, SLOT( beenden() ));
+    connect(ui->btnAction, SIGNAL( clicked() ), this, SLOT( action() ));
 }
 
 Widget::~Widget()
 {
     delete ui;
+}
+
+void Widget::setSensor(DataGate *sensor)
+{
+    this->sensor = sensor;
 }
 
 void Widget::beenden()
@@ -21,5 +27,6 @@ void Widget::beenden()
 
 void Widget::action()
 {
-    ui->edtEingabe->setText("Hallo IFA12A");
+    QString str = QString::fromStdString( sensor->getSensorType());
+    ui->edtEingabe->setText(str);
 }

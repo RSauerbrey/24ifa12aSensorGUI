@@ -2,6 +2,7 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include "datagate.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -16,6 +17,7 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
+    void setSensor(DataGate *sensor);
 
 public slots:
     void beenden();
@@ -24,5 +26,6 @@ public slots:
 
 private:
     Ui::Widget *ui;
+    DataGate *sensor;
 };
 #endif // WIDGET_H
