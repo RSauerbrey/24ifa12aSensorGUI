@@ -9,7 +9,7 @@ class Controller
 {
 public:
     Controller();
-    void action();
+    void action(string);
 protected:
     Model *model;
     View *view;

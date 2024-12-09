@@ -8,7 +8,7 @@ class Model
 {
 public:
     Model();
-    void update();
+    void update(string);
     QString getState();
     DataGate* addSensor(DataGate* dG); //Gibt den dG Zeiger zurück, wenn im Array noch Platz war, ansonsten nullptr
 protected:

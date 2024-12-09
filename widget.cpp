@@ -30,3 +30,10 @@ void Widget::action()
     QString str = QString::fromStdString( sensor->getSensorType());
     ui->edtEingabe->setText(str);
 }
+
+void Widget::addSensor()
+{
+    //Abfrage der Radiobuttons
+    //Aufruf der Methode action beim Controller und Übergabe der Information
+    // z.B. "ADDTEMP"
+}

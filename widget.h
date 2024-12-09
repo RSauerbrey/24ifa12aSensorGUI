@@ -19,9 +19,11 @@ public:
     ~Widget();
     void setSensor(DataGate *sensor);
 
+
 public slots:
     void beenden();
     void action();
+    void addSensor();
 
 
 private:

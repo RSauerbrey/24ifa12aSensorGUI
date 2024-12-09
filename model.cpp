@@ -2,8 +2,10 @@
 
 Model::Model() {}
 
-void Model::update()
+void Model::update(string command)
 {
+    //WENN command == ADDTEMP
+    // DANN neuen Sensor anlegen und in sensor[] speichern
 
 }
 

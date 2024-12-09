@@ -2,7 +2,7 @@
 
 Controller::Controller() {}
 
-void Controller::action()
+void Controller::action(string command)
 {
-
+    model->update(command);
 }
