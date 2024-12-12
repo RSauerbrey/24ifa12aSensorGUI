@@ -13,6 +13,7 @@ public:
 
     void update();
     void notify();
+    void setController(Controller *controller);
 
 private:
     Widget *widget;

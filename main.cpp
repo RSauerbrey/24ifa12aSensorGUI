@@ -1,7 +1,7 @@
 #include "controller.h"
 #include "model.h"
 #include "myview_1.h"
-#
+
 #include "feuchtesensor.h"
 #include <QApplication>
 
@@ -9,18 +9,15 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    FeuchteSensor *f1 = new FeuchteSensor;
-    FeuchteSensor *f2 = new FeuchteSensor;
-    FeuchteSensor *f3 = new FeuchteSensor;
+    Model *model = new Model;
+    Controller *controller = new Controller;
+    View *view = new MyView_1;
+    model->setView(view);
+    view->setModel(model);
+    view->setController(controller);
+    controller->setModel(model);
+    controller->setView(view);
 
 
-    Model *m = new Model;
-
-    qDebug() << m->addSensor(f1);
-    qDebug() << m->addSensor(f2);
-    qDebug() << m->addSensor(f2);
-
-    Controller *c = new Controller;
-    View *view1 = new MyView_1;
     return a.exec();
 }

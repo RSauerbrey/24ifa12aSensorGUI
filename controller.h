@@ -10,6 +10,8 @@ class Controller
 public:
     Controller();
     void action(string);
+    void setModel(Model* model);
+    void setView(View* view);
 protected:
     Model *model;
     View *view;

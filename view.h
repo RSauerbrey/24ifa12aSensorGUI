@@ -11,7 +11,8 @@ public:
     View();
     virtual void update() = 0;
     virtual void notify() = 0;
-
+    virtual void setController(Controller* controller);
+    virtual void setModel(Model* model);
 protected:
     Controller* controller;
     Model* model;

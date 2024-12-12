@@ -26,16 +26,6 @@
     <string>Beenden</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="edtEingabe">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>30</y>
-     <width>241</width>
-     <height>61</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QPushButton" name="btnAction">
    <property name="geometry">
     <rect>
@@ -89,6 +79,16 @@
    </property>
    <property name="text">
     <string>Feuchte</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="edtEingabe">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>231</width>
+     <height>81</height>
+    </rect>
    </property>
   </widget>
  </widget>

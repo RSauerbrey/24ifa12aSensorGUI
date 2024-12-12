@@ -11,6 +11,7 @@ string TemperaturSensor::getSensorType()
 {
     return "Temperatur";
 }
+
 void TemperaturSensor::fetchData(double data[])
 {
     for(int i = 0; i < 5 ; i++)
